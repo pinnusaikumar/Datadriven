@@ -1,0 +1,32 @@
+Feature: smartbear_Automation
+
+Scenario: validating login
+Given Open the Browser
+Given Navigate the Url
+When Enter username
+When Enter Password
+When Click on login button
+Then Verify wheater login is successful
+
+Scenario: once login is successful and click on orders menu
+#Given Open the Browser
+#Given Navigate the Url
+#When Enter username
+#When Enter Password
+#When Click on login button
+#Then Verify wheater login is successful
+When Click on orders menu
+When Select product dropdown
+When Enter Quantity
+When select the Customer name 
+When select the Street
+When select the city
+When select the State
+When select the zip
+When Select card
+When Enter card no
+When Expirydate
+When click on process button
+Then verify order is sucessful added.
+
+

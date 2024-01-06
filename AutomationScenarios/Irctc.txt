@@ -1,0 +1,37 @@
+@irctcall
+Feature: IRCTC Reservation for Train APP
+@irctc @regression
+Scenario Outline: IRCTC End User Registration
+Given Open the Browser
+Given Navigate to the URL "<URL>"
+When Click on Register button
+Given Wait for the page load
+When Enter irctcusername "<irctcusername>"
+When Enter irctcPassword  "<irctcpassword>"
+When Enter Confirm password "<confirmpassword>"
+When Select the Preferd language dropdown
+When Select the security question 
+When Enter the security answer "<securityAnswer>"
+When Click on continue button
+Then verify page redirected to personal details are not
+
+Examples:
+|URL|irctcusername|irctcpassword|confirmpassword|securityAnswer|
+|https://www.irctc.co.in/nget/train-search|saikumarpinnu|Sai123@|Sai123@|cricket|
+
+
+@register @regression
+Scenario: IRCTC End User Registration
+Given Open the Browser
+Given Navigate to the URL "<URL>"
+When Click on Register button
+
+Examples:
+|URL|
+|https://www.irctc.co.in/nget/train-search|
+
+
+
+
+
+
